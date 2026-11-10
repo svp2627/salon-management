@@ -1,0 +1,775 @@
+
+.pos-page {
+  width: 100%;
+  padding: 10px 0;
+  color: var(--text-primary);
+}
+
+.pos-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.pos-header h1 {
+  font-size: 28px;
+  margin: 0 0 8px;
+}
+
+.pos-header p {
+  color: var(--text-secondary);
+  margin: 0;
+  font-size: 14px;
+}
+
+.pos-header-icon {
+  color: #c9a45c;
+  background: rgba(201, 164, 92, 0.12);
+  padding: 13px;
+  border-radius: 12px;
+}
+
+.pos-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(320px, 1fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.pos-services-panel,
+.pos-cart-panel {
+  background: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 13px;
+  padding: 22px;
+  min-width: 0;
+}
+
+.pos-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.pos-section-heading h2 {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  font-size: 18px;
+  margin: 0;
+}
+
+.pos-section-heading span {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.pos-search {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  color: var(--text-secondary);
+}
+
+.pos-search input {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  color: var(--text-primary);
+}
+
+.pos-service-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.pos-service-card {
+  padding: 17px;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  background: rgba(128, 128, 128, 0.035);
+}
+
+.pos-service-icon {
+  color: #c9a45c;
+  margin-bottom: 12px;
+}
+
+.pos-service-card h3 {
+  font-size: 15px;
+  margin: 0 0 7px;
+}
+
+.pos-service-card p {
+  color: var(--text-secondary);
+  font-size: 12px;
+  margin: 0 0 16px;
+}
+
+.pos-service-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+}
+
+.pos-service-bottom strong {
+  color: #c9a45c;
+  font-size: 15px;
+}
+
+.pos-service-bottom button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border: none;
+  border-radius: 7px;
+  background: #c9a45c;
+  color: #171717;
+  cursor: pointer;
+}
+
+.pos-service-bottom button:hover {
+  background: #b58d43;
+}
+
+.pos-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  margin: 17px 0 8px;
+}
+
+.pos-input {
+  width: 100%;
+  min-height: 43px;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+  outline: none;
+  box-sizing: border-box;
+}
+
+.pos-cart-items {
+  margin: 18px 0;
+}
+
+.pos-empty-cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 10px;
+  color: var(--text-secondary);
+  text-align: center;
+}
+
+.pos-empty-cart p {
+  margin: 12px 0 5px;
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+.pos-empty-cart span {
+  font-size: 12px;
+}
+
+.pos-cart-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto auto;
+  gap: 9px;
+  align-items: center;
+  padding: 13px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pos-cart-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  min-width: 0;
+}
+
+.pos-cart-item-info strong {
+  font-size: 13px;
+}
+
+.pos-cart-item-info span {
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.pos-quantity {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+
+.pos-quantity button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25px;
+  height: 25px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background: transparent;
+  color: var(--text-primary);
+  cursor: pointer;
+}
+
+.pos-quantity span {
+  font-size: 12px;
+  min-width: 12px;
+  text-align: center;
+}
+
+.pos-line-total {
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.pos-remove {
+  display: flex;
+  border: none;
+  background: transparent;
+  color: #e05d5d;
+  cursor: pointer;
+}
+
+.pos-bill-summary {
+  padding: 15px 0;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pos-summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 13px;
+  font-size: 14px;
+}
+
+.pos-summary-row span {
+  color: var(--text-secondary);
+}
+
+.pos-discount-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+  font-size: 13px;
+}
+
+.pos-discount-row input {
+  width: 100px;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 7px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.pos-total-row {
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px dashed var(--border-color);
+}
+
+.pos-total-row strong {
+  color: #c9a45c;
+  font-size: 20px;
+}
+
+.pos-generate-btn,
+.pos-print-btn,
+.pos-clear-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  padding: 13px;
+  margin-top: 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pos-generate-btn {
+  background: #c9a45c;
+  color: #171717;
+  border: none;
+}
+
+.pos-print-btn {
+  background: #237c58;
+  color: white;
+  border: none;
+}
+
+.pos-clear-btn {
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+}
+
+.pos-generate-btn:hover {
+  background: #b58d43;
+}
+
+.pos-empty,
+.pos-loading {
+  color: var(--text-secondary);
+  text-align: center;
+  padding: 30px;
+}
+
+.pos-receipt {
+  max-width: 600px;
+  margin: 25px auto;
+  padding: 28px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  background: var(--card-bg);
+  color: var(--text-primary);
+}
+
+.pos-receipt-header {
+  text-align: center;
+  padding-bottom: 15px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.pos-receipt-header h2 {
+  color: #c9a45c;
+  margin: 0 0 5px;
+}
+
+.pos-receipt-header p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.pos-receipt-details {
+  padding: 12px 0;
+  font-size: 13px;
+}
+
+.pos-receipt table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.pos-receipt th,
+.pos-receipt td {
+  padding: 10px 5px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.pos-receipt-total {
+  text-align: right;
+  padding-top: 12px;
+  font-size: 13px;
+}
+
+.pos-receipt-total h3 {
+  color: #c9a45c;
+  font-size: 20px;
+}
+
+.pos-thank-you {
+  text-align: center;
+  margin-top: 22px;
+  color: #c9a45c;
+  font-weight: 600;
+}
+
+@media (max-width: 950px) {
+  .pos-layout {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .pos-service-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pos-cart-item {
+    grid-template-columns: minmax(0, 1fr) auto auto;
+  }
+
+  .pos-line-total {
+    display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  #pos-print-area,
+  #pos-print-area * {
+    visibility: visible !important;
+  }
+
+  #pos-print-area {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 20px;
+    background: white !important;
+    color: black !important;
+    border: none;
+  }
+
+  #pos-print-area th,
+  #pos-print-area td {
+    color: black !important;
+  }
+}
+/* ENACT Luxury Black & Gold Invoice */
+
+.pos-receipt {
+  max-width: 760px;
+  margin: 35px auto;
+  padding: 38px;
+  background: #111;
+  color: #f5f0e5;
+  border: 1px solid #c9a45c;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.3);
+}
+
+.pos-receipt-header {
+  text-align: center;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #c9a45c;
+}
+
+.pos-receipt-header h2 {
+  color: #d8b66a;
+  font-size: 32px;
+  letter-spacing: 5px;
+  margin: 0 0 8px;
+}
+
+.pos-receipt-header p {
+  color: #eee0bd;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.pos-receipt-details {
+  padding: 20px 0;
+  line-height: 1.8;
+  color: #eee;
+}
+
+.pos-receipt-details strong {
+  color: #d8b66a;
+}
+
+.pos-receipt table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 15px 0;
+  color: #f5f0e5;
+}
+
+.pos-receipt th {
+  background: #29231a;
+  color: #d8b66a;
+  padding: 13px;
+  text-align: left;
+}
+
+.pos-receipt td {
+  padding: 13px;
+  border-bottom: 1px solid #39332a;
+}
+
+.pos-receipt-total {
+  margin-top: 20px;
+  padding-top: 18px;
+  border-top: 1px solid #c9a45c;
+  text-align: right;
+  line-height: 1.8;
+}
+
+.pos-receipt-total h3 {
+  color: #e4c477;
+  font-size: 25px;
+}
+
+.pos-thank-you {
+  text-align: center;
+  color: #d8b66a;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.pos-whatsapp-btn {
+  width: 100%;
+  margin-top: 10px;
+  padding: 13px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 9px;
+  border: none;
+  border-radius: 8px;
+  background: #187c4b;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.pos-whatsapp-btn:hover {
+  background: #12683e;
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  #pos-print-area,
+  #pos-print-area * {
+    visibility: visible !important;
+  }
+
+  #pos-print-area {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    border-radius: 0 !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* ENACT Modern Invoice - Readable Ivory & Gold */
+
+.pos-receipt {
+  max-width: 760px;
+  margin: 35px auto;
+  padding: 38px;
+  background: #fffdf8 !important;
+  color: #29251f !important;
+  border: 1px solid #c9a45c;
+  border-radius: 12px;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.16);
+  font-family: Arial, sans-serif;
+}
+
+.pos-receipt-header {
+  text-align: center;
+  padding-bottom: 22px;
+  border-bottom: 2px solid #c9a45c;
+}
+
+.pos-receipt-header h2 {
+  color: #9a742e !important;
+  font-size: 32px;
+  letter-spacing: 5px;
+}
+
+.pos-receipt-header p,
+.pos-receipt-details,
+.pos-receipt-total,
+.pos-receipt td {
+  color: #29251f !important;
+}
+
+.pos-receipt-details strong {
+  color: #98712d;
+}
+
+.pos-receipt th {
+  background: #29251f !important;
+  color: #f5e4b8 !important;
+  padding: 13px;
+}
+
+.pos-receipt td {
+  padding: 13px;
+  border-bottom: 1px solid #e8dfce;
+}
+
+.pos-receipt-total h3 {
+  color: #98712d !important;
+}
+
+.pos-thank-you {
+  color: #98712d !important;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+@media print {
+  body * {
+    visibility: hidden !important;
+  }
+
+  #pos-print-area,
+  #pos-print-area * {
+    visibility: visible !important;
+  }
+
+  #pos-print-area {
+    position: absolute !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    background: #fffdf8 !important;
+    color: #29251f !important;
+    box-shadow: none !important;
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+  }
+}
+
+/* ENACT Personalized Thank You Card */
+
+.pos-thankyou-card {
+  max-width: 760px;
+  margin: 30px auto;
+  padding: 55px 35px;
+  text-align: center;
+  background: linear-gradient(145deg, #17130d, #302414, #17130d);
+  color: #fff7e8;
+  border: 3px solid #c9a45c;
+  outline: 1px solid #c9a45c;
+  outline-offset: -10px;
+  font-family: Georgia, serif;
+}
+
+.thankyou-top-line {
+  color: #e5c477;
+  font-size: 30px;
+  letter-spacing: 5px;
+  font-weight: bold;
+}
+
+.thankyou-tagline {
+  color: #d9c49a;
+  font-size: 11px;
+  letter-spacing: 4px;
+}
+
+.thankyou-divider {
+  color: #d8b66a;
+  font-size: 28px;
+  margin: 22px 0;
+}
+
+.pos-thankyou-card h1 {
+  color: #e8c979;
+  font-size: 48px;
+  letter-spacing: 6px;
+  margin: 15px 0;
+}
+
+.pos-thankyou-card h2 {
+  color: #fff7e8;
+  font-size: 22px;
+}
+
+.thankyou-message {
+  max-width: 450px;
+  margin: 20px auto;
+  color: #eee1c5;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.thankyou-bill {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  max-width: 300px;
+  margin: 30px auto;
+  padding: 20px;
+  border-top: 1px solid #c9a45c;
+  border-bottom: 1px solid #c9a45c;
+}
+
+.thankyou-bill span {
+  color: #d8b66a;
+  letter-spacing: 3px;
+  font-size: 12px;
+}
+
+.thankyou-bill strong:last-child {
+  color: #e8c979;
+  font-size: 30px;
+}
+
+.pos-thankyou-card h3 {
+  color: #e5c477;
+  font-size: 13px;
+  letter-spacing: 2px;
+  margin: 25px 0;
+}
+
+.thankyou-shop-name {
+  color: #e5c477;
+  font-size: 20px;
+  letter-spacing: 4px;
+  font-weight: bold;
+}
+
+.pos-thankyou-card p {
+  color: #eee1c5;
+  line-height: 1.7;
+}
+
+.pos-thankyou-card a {
+  color: #e8c979;
+  display: inline-block;
+  margin-top: 12px;
+}
+
+@media (max-width: 520px) {
+  .pos-thankyou-card {
+    padding: 40px 22px;
+  }
+
+  .pos-thankyou-card h1 {
+    font-size: 34px;
+  }
+}
+
+

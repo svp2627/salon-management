@@ -1,0 +1,231 @@
+
+.appointment-page {
+  width: 100%;
+  max-width: 1050px;
+  margin: 0 auto;
+  padding: 12px 4px 35px;
+  color: var(--text);
+}
+
+.appointment-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+}
+
+.appointment-eyebrow,
+.appointment-step {
+  color: var(--gold-light, var(--gold));
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.appointment-heading h1 {
+  font-size: 30px;
+  margin: 10px 0 7px;
+  color: var(--text);
+}
+
+.appointment-heading p,
+.appointment-card-header p {
+  color: var(--muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+.appointment-heading-icon {
+  width: 55px;
+  height: 55px;
+  display: grid;
+  place-items: center;
+  border-radius: 15px;
+  background: rgba(195, 152, 76, 0.12);
+  color: var(--gold-light, var(--gold));
+  font-size: 30px;
+}
+
+.appointment-card {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 16px;
+  padding: 30px;
+}
+
+.appointment-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid var(--border);
+}
+
+.appointment-card-header h2 {
+  font-size: 20px;
+  margin: 9px 0;
+  color: var(--text);
+}
+
+.appointment-badge {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--gold-light, var(--gold));
+  background: rgba(195, 152, 76, 0.12);
+  border: 1px solid rgba(195, 152, 76, 0.25);
+  border-radius: 20px;
+  padding: 8px 12px;
+  white-space: nowrap;
+}
+
+.appointment-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 23px 20px;
+}
+
+.appointment-field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 0;
+}
+
+.appointment-field.full-width {
+  grid-column: 1 / -1;
+}
+
+.appointment-field label {
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.appointment-field input,
+.appointment-field select,
+.appointment-field textarea {
+  width: 100%;
+  min-width: 0;
+  box-sizing: border-box;
+  background: var(--input);
+  color: var(--text);
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  padding: 14px 15px;
+  font-family: inherit;
+  font-size: 13px;
+  outline: none;
+  transition: border 0.2s, box-shadow 0.2s;
+}
+
+.appointment-field input:focus,
+.appointment-field select:focus,
+.appointment-field textarea:focus {
+  border-color: var(--gold);
+  box-shadow: 0 0 0 3px rgba(195, 152, 76, 0.12);
+}
+
+.appointment-field select option {
+  background: var(--card);
+  color: var(--text);
+}
+
+.appointment-field textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.appointment-message {
+  margin-top: 22px;
+  padding: 13px 15px;
+  border-radius: 9px;
+  font-size: 13px;
+}
+
+.appointment-message.success {
+  color: #3caf78;
+  background: rgba(60, 175, 120, 0.12);
+}
+
+.appointment-message.error {
+  color: #e36c6c;
+  background: rgba(227, 108, 108, 0.12);
+}
+
+.appointment-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--border);
+}
+
+.appointment-actions button {
+  border-radius: 9px;
+  padding: 13px 20px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.appointment-reset {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid var(--border);
+}
+
+.appointment-reset:hover {
+  border-color: var(--gold);
+}
+
+.appointment-submit {
+  background: var(--gold);
+  color: #17130d;
+  border: 1px solid var(--gold);
+}
+
+.appointment-submit:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.appointment-submit:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none;
+}
+
+@media (max-width: 650px) {
+  .appointment-card {
+    padding: 20px 16px;
+  }
+
+  .appointment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .appointment-field.full-width {
+    grid-column: auto;
+  }
+
+  .appointment-heading h1 {
+    font-size: 24px;
+  }
+
+  .appointment-actions {
+    flex-direction: column-reverse;
+  }
+
+  .appointment-actions button {
+    width: 100%;
+  }
+
+  .appointment-badge {
+    display: none;
+  }
+}
